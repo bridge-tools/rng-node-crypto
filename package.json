@@ -1,0 +1,45 @@
+{
+	"name": "@bridge-tools/rng-node-crypto",
+	"version": "0.0.1",
+	"description": "This contains the node-crypto rng function used with @bridge-tools/generator. It was moved to it's own package so tools like Browserify won't include node-crypto in the bundle when not required.",
+	"author": "bridge-tools",
+	"license": "MIT",
+	"main": "dist/index.js",
+	"directories": {
+		"test": "test"
+	},
+	"files": [
+		"dist",
+		"LICENSE"
+	],
+	"scripts": {
+		"version": "npm run build",
+		"build": "tsc -p ./tsconfig-build.json",
+		"watch": "tsc --watch -p ./tsconfig-build.json",
+		"lint": "eslint src test",
+		"test": "jest",
+		"test-c": "jest --coverage",
+		"test-watch": "jest --watch",
+		"test-watch-c": "jest --watch --coverage"
+	},
+	"keywords": [
+		"javascript",
+		"typescript",
+		"bridge",
+		"bridge-tools",
+		"hand-generation"
+	],
+	"devDependencies": {
+		"@bridge-tools/config": ">=0.1.0"
+	},
+	"prettier": "@bridge-tools/config/prettier.json",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bridge-tools/rng-node-crypto.git"
+	},
+	"dependencies": {
+		"tslib": "^2.3.1",
+		"@bridge-tools/core": ">=0.0.1",
+		"@bridge-tools/generator": ">=0.0.1"
+	}
+}
