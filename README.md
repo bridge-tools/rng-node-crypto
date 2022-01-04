@@ -21,18 +21,18 @@ $ npm i @bridge-tools/rng-node-crypto
 Example usage:
 
 ```typescript
-const { generateDeals } = require("@bridge-tools/generator");
+const { generateDeals } = require('@bridge-tools/generator');
 const {
-  NodeCryptoRandomNumberGenerator,
-} = require("@bridge-tools/rng-node-crytpo");
+	NodeCryptoRandomNumberGenerator,
+} = require('@bridge-tools/rng-node-crytpo');
 
 const deal = generateDeals({
-  num: 5,
-  rng: NodeCryptoRandomNumberGenerator,
+	num: 5,
+	rng: NodeCryptoRandomNumberGenerator,
 });
 ```
 
-We have benchmarked the library, with the results available in the [BENCHMARKS](https://github.com/bridge-tools/generator/blob/main/BENCHMARKS.md) file in `@bridge-tools/generator`.
+We have benchmarked the library, with the results available in the [BENCHMARKS](https://github.com/bridge-tools/generator/blob/main/BENCHMARK.md) file in `@bridge-tools/generator`.
 
 For more examples and the code used for the benchmarks, see the `examples` directory in `@bridge-tools/generator`.
 
